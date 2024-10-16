@@ -6,6 +6,53 @@
     <title>Weather App</title>
 </head>
 <body>
-    
+    <header class="header__nav">
+        <nav class="nav">            
+            <ul class="nav__list">
+                <li class="nav__list-link">Register</li>
+                <li class="nav__list-link">Sign in</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <header class="header__body">
+            <img src="https://via.placeholder.com/150" alt="Weather App Logo">
+        </header>
+        <section class="search">            
+            <form action="" class="search__form">
+                <input type="text" name="city" id="city" placeholder="City">
+                <button type="submit">Search</button>
+            </form>
+            <sidebar class="search__recent">
+                <h2 class="search__recent-heading">Recent Searches</h2>
+                <ul class="search__recent-list">
+                    <li class="search__recent-city">City 1</li>
+                    <li class="search__recent-city">City 2</li>
+                    <li class="search__recent-city">City 3</li>
+                    <li class="search__recent-city">City 4</li>
+                    <li class="search__recent-city">City 5</li>
+                </ul>
+            </sidebar>
+        </section>
+        <section class="weather__details">
+            <h2 class="weather__details-title">Weather in <span id="city-name">City</span></h2>        
+            <p class="weather__details-temp">Temperature: <span id="temperature">0</span>°C</p>
+            <p class="weather__details-humid">Humidity: <span id="humidity">0</span>%</p>
+            <p class="weather__details-wind">Wind: <span id="wind">0</span> km/h</p>
+        </section>
+        <section class="music__suggestion">
+            <article class="music__suggestion-card">
+                <h3 class="music__suggestion-card--title">Song title</h3>
+                <h4 class="music__suggestion-card--artist">Artist name</h4>
+                <button class="music__suggestion-card--play">Play in Spotify</button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-copyright">Weather App &copy; 2024 <a href="">Tiago Costa Rebelo</a></p>
+        <p class="footer-powered">Powered by <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+        <p class="footer-powered">Powered by <a href="">Unsplash</a></p>
+        <p class="footer-powered">Powered by <a href="">Spotify</a></p>
+    </footer>
 </body>
 </html>
