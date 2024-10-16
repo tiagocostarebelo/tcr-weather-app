@@ -1,0 +1,29 @@
+@import "resets.css";
+
+:root {
+    /* Fonts */
+    --headings: "Kaushan Script", cursive;
+    --paragraphs: "Afacad Flux", serif;
+
+
+    /* Colors */
+    --bg-skyBlue: #87CEEB;
+    --bg-softGreen: #A8E6CF;
+
+    --text-gentleGray: #e7e7e7;
+    --text-lightCloudWhite: #F8F8FF;
+
+    --accent-blue: #4682B4;
+    --accent-sunYellow: #FFD700;
+}
+
+body {
+    background-image: url("../assets/home_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: var(--paragraphs);
+}
+
+
+
