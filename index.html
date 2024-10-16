@@ -10,33 +10,33 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="header__nav">
-        <nav class="nav">            
-            <ul class="nav__list">
-                <li class="nav__list-link">Register</li>
-                <li class="nav__list-link">Sign in</li>
-            </ul>
+    <header class="header">
+        <nav class="header__nav">            
+            <div role='list' class="header__nav-access">
+                <button class="header__nav-access--signin btn">Log in</button>
+                <button class="header__nav-access--register btn">Sign up</button>
+            </div>
         </nav>
     </header>
     <main>
         <header class="header__body">
-            <img src="https://via.placeholder.com/150" alt="Weather App Logo">
+            <h1 class="logo header__body-logo">Weather Web App</h1>
         </header>
-        <section class="search">            
-            <form action="" class="search__form">
+        <section class="search__current">            
+            <form action="" class="search__current-form">
                 <input type="text" name="city" id="city" placeholder="City">
-                <button type="submit">Search</button>
-            </form>
-            <sidebar class="search__recent">
-                <h2 class="search__recent-heading">Recent Searches</h2>
-                <ul class="search__recent-list">
-                    <li class="search__recent-city">City 1</li>
-                    <li class="search__recent-city">City 2</li>
-                    <li class="search__recent-city">City 3</li>
-                    <li class="search__recent-city">City 4</li>
-                    <li class="search__recent-city">City 5</li>
-                </ul>
-            </sidebar>
+                <button type="submit" class="btn">Search</button>
+            </form>            
+        </section>
+        <section class="search__recent">
+            <h2 class="search__recent-heading">Recent Searches</h2>
+            <ul role='list' class="search__recent-list">
+                <li class="search__recent-list--item">City 1</li>
+                <li class="search__recent-list--item">City 2</li>
+                <li class="search__recent-list--item">City 3</li>
+                <li class="search__recent-list--item">City 4</li>
+                <li class="search__recent-list--item">City 5</li>
+            </ul>
         </section>
         <section class="weather__details">
             <h2 class="weather__details-title">Weather in <span id="city-name">City</span></h2>        
@@ -53,10 +53,19 @@
         </section>
     </main>
     <footer>
-        <p class="footer-copyright">Weather App &copy; 2024 <a href="">Tiago Costa Rebelo</a></p>
-        <p class="footer-powered">Powered by <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
-        <p class="footer-powered">Powered by <a href="">Unsplash</a></p>
-        <p class="footer-powered">Powered by <a href="">Spotify</a></p>
+        <section class="footer__details">
+            <p class="footer__details-copyright">Weather App &copy; 2024 <a href="">Tiago Costa Rebelo</a></p>
+            <p class="footer__details-powered">Powered by <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+            <p class="footer__details-powered">Powered by <a href="">Unsplash</a></p>
+            <p class="footer__details-powered">Powered by <a href="">Spotify</a></p>
+        </section>
+
+        <nav class="footer__nav">            
+            <ul role='list' class="footer__nav-list">
+                <li class="footer__nav-list--item">Register</li>
+                <li class="footer__nav-list--item">Sign in</li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
