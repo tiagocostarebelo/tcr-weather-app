@@ -14,6 +14,7 @@
 
     --text-gentleGray: #e7e7e7;
     --text-lightCloudWhite: #F8F8FF;
+    --text-darkGray: #3f3f3f;
 
     --accent-blue: #4682B4;
     --accent-sunYellow: #FFD700;
@@ -23,11 +24,15 @@
 /* Global Styles */
 
 body {
-    background-image: url("../assets/home_background.jpg");
+    background-image: url("../assets/home_bg6.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     font-family: var(--paragraphs);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--headings);
 }
 
 .btn {
@@ -65,11 +70,8 @@ body {
 main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "header header . music"
-    "search search search music"
-    ". details details music";
+    grid-template-rows: 150px 1fr 300px;
+    
 }
 
 /* Main Header */
@@ -83,8 +85,11 @@ main {
 
 .header__body-logo {
     font-family: var(--headings);
-    font-size: clamp(2rem, 6vw, 4rem);
-    color: var(--text-gentleGray);
+    font-size: clamp(4rem, 6vw, 5rem);
+    text-wrap: wrap;
+    text-align: center;
+    color: var(--text-lightCloudWhite);
+    text-shadow: 2px 0px 3px #f93900f0, 1px -1px 1em #a9ff007a, -2px 0px 0em #005bff;;
 }
 
 /* Main Search */
@@ -131,10 +136,58 @@ main {
 /* Main Music */
 
 .music__suggestion {
-    display: grid;
-    grid-area: 2 / 4 / last-line / last-line; 
-    justify-self: center;
+    position: absolute;
+    top: 10rem;
+    right: 7rem;
     padding: 1rem 0.5rem;
+    margin-inline: 3rem;
+}
+
+.music__suggestion-title {
+    font-family: var(--headings);
+    font-size: 2.2em;
+    color: var(--text-lightCloudWhite);
+    text-align: center;
+}
+
+.music__suggestion-card {
+    background-image: url("../assets/card_blazing.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+
+    margin-block: 2rem;
+}
+
+.music__suggestion-card--title {    
+    line-height: 1.4;
+    font-size: 1.8em;
+    color: var(--text-lightCloudWhite);
+}
+
+.music__suggestion-card--artist {
+    font-family: var(--paragraphs);
+    font-size: 1.4em;
+    color: var(--text-darkGray);
+}
+
+.music__suggestion-card--play {
+    margin-top: 1rem;
+    padding: 0.25rem 1.25rem;
+    border-radius: 0.5rem;
+    background-color: var(--bg-softGreen);
+    color: var(--text-darkGray);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
 }
 
 /* Main Media Queries */
@@ -154,9 +207,5 @@ main {
     }
 }
 
-/* Footer */
 
-footer {
-    display: flex;
-}
 
