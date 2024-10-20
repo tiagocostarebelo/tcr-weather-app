@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tenki App</title>
+    <title>Weather4Cast</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Kaushan+Script&display=swap" rel="stylesheet">
@@ -11,17 +11,17 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav">            
-            <div role='list' class="header__nav-access">
-                <button class="header__nav-access--signin btn">Log in</button>
+        <nav class="header__nav-mobile">
+            <div class="line top"></div>   
+            <div class="line mid"></div>   
+            <div class="line bot"></div>   
+        </nav>
+        <nav class="header__nav-access">
+                <button class="header__nav-access--login btn">Log in</button>
                 <button class="header__nav-access--register btn">Sign up</button>
-            </div>
         </nav>
     </header>
-    <main>
-        <header class="header__body">
-            <h1 class="logo header__body-logo">Tenki app</h1>
-        </header>
+    <main>        
         <section class="search__current">            
             <form action="" class="search__current-form">
                 <input type="text" name="city" id="city" placeholder="City">
@@ -80,5 +80,6 @@
             </ul>
         </nav>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
