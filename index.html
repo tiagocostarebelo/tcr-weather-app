@@ -6,7 +6,7 @@
     <title>Weather4Cast</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -21,7 +21,8 @@
                 <button class="header__nav-access--register btn">Sign up</button>
         </nav>
     </header>
-    <main>        
+    
+    <main>            
         <section class="search__current">            
             <form action="" class="search__current-form">
                 <input type="text" name="city" id="city" placeholder="City">
@@ -37,34 +38,35 @@
                 <li class="search__recent-list--item">City 4</li>
                 <li class="search__recent-list--item">City 5</li>
             </ul>
-        </section>
+        </section>    
         <section class="weather__details">
             <h2 class="weather__details-title">Weather in <span id="city-name">City</span></h2>        
             <p class="weather__details-temp">Temperature: <span id="temperature">0</span>°C</p>
             <p class="weather__details-humid">Humidity: <span id="humidity">0</span>%</p>
             <p class="weather__details-wind">Wind: <span id="wind">0</span> km/h</p>
-        </section>
+        </section>   
         <section class="music__suggestion">
             <h2 class="music__suggestion-title">Suggested tracks</h2>
-            <article class="music__suggestion-card">
+            <div class="music__suggestion-card">
                 <h3 class="music__suggestion-card--title">Song title</h3>
                 <h4 class="music__suggestion-card--artist">Artist name</h4>
                 <button class="music__suggestion-card--play">Play in Spotify</button>
-            </article>
-            <article class="music__suggestion-card">
+            </div>
+            <div class="music__suggestion-card">
                 <h3 class="music__suggestion-card--title">Song title</h3>
                 <h4 class="music__suggestion-card--artist">Artist name</h4>
                 <button class="music__suggestion-card--play">Play in Spotify</button>
-            </article>
-            <article class="music__suggestion-card">
+            </div>
+            <div class="music__suggestion-card">
                 <h3 class="music__suggestion-card--title">Song title</h3>
                 <h4 class="music__suggestion-card--artist">Artist name</h4>
                 <button class="music__suggestion-card--play">Play in Spotify</button>
-            </article>
-            
-            
+            </div>    
         </section>
-    </main>
+        <section class="image__background-details">
+            <p class="image__background-details-credits">Photo by <a href="https://unsplash.com/@username">Photographer</a><br /> on <a href="https://unsplash.com/">Unsplash</a></p>
+        </section>
+    </main>     
     <footer>
         <section class="footer__details">
             <p class="footer__details-copyright">Weather App &copy; 2024 <a href="">Tiago Costa Rebelo</a></p>
@@ -73,12 +75,12 @@
             <p class="footer__details-powered">Powered by <a href="">Spotify</a></p>
         </section>
 
-        <nav class="footer__nav">            
+        <section class="footer__nav">            
             <ul role='list' class="footer__nav-list">
                 <li class="footer__nav-list--item">Register</li>
                 <li class="footer__nav-list--item">Sign in</li>
             </ul>
-        </nav>
+        </section>
     </footer>
     <script src="./js/script.js"></script>
 </body>
